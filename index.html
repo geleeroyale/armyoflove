@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Army of Love</title>
+      <!--Loading Bungee Google font-->
+      <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+
+      <!--Loading the JS heart classes and sketch dependency-->
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/sketch.js/1.0.0/sketch.min.js'></script>
+      <script src="js/index.js"></script>
+
+      <!--Loading stylesheets-->
+      <link rel="stylesheet" href="css/site.css">
+      <link rel="stylesheet" href="css/style.css">
+</head>
+<header>
+</header>
+<body>
+  <div id="container">
+
+  </div>
+  <section class="info">
+            <div class="about">
+              <h1>Army of Love</h1>
+            </div>
+  </section>
+
+  <script>
+  Sketch.create({
+
+    container: document.getElementById( 'container' ),
+
+    setup: function() {
+
+      var particle,
+        center = {
+          x: this.width / 2,
+          y: (this.height / 2) - 50
+        };
+
+      for (var i = 0; i < 400; i++) {
+        particle = new Particle();
+        particle.x = center.x + 180 * Math.pow(Math.sin(i), 3);
+        particle.y = center.y + 10 * (-(15 * Math.cos(i) - 5 * Math.cos(2 * i) - 2 * Math.cos(3 * i) - Math.cos(4 * i)));
+        particle.init();
+        particles.push(particle);
+      }
+
+    },
+
+    draw: function() {
+
+      var particle;
+
+      for (var i = 0, length = particles.length; i < length; i++) {
+        particle = particles[i];
+        particle.update();
+        particle.draw(this);
+      }
+
+
+    }
+  });
+  </script>
+  <section>
+    <h5 class="link-join"><a href="https://matrix.to/#/#armyoflove:matrix.org">Join</a></h5>
+  </section>
+</body>
+</html>

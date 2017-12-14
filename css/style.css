@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+a {
+	color: #f5496b;
+}
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #ebe9e1;
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #FFFFFF), color-stop(100%, #ebe9e1));
+	background: -webkit-radial-gradient(center, ellipse cover, #FFFFFF 0%, #ebe9e1 100%);
+	background: -moz-radial-gradient(center, ellipse cover, #FFFFFF 0%, #ebe9e1 100%);
+	background: -ms-radial-gradient(center, ellipse cover, #FFFFFF 0%, #ebe9e1 100%);
+	background: -o-radial-gradient(center, ellipse cover, #FFFFFF 0%, #ebe9e1 100%);
+	background: radial-gradient(ellipse at center, #FFFFFF 0%, #ebe9e1 100%);
+}
+h1, h5 {
+	font-family: 'Bungee', cursive;
+	font-weight: 400;
+	font-size: 5rem;
+	color: #4a4a4a;
+	text-align: center;
+}
+h5 {
+	font-size: 2rem;
+}
+#container {
+	width: 100%;
+	height: 0vh;
+}
+.canvas-size {
+	max-height: 50vh;
+}
+.link-join {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin-top: 50vh;
+
+}
