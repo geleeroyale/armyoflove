@@ -26,19 +26,21 @@ body {
 	background: -o-radial-gradient(center, ellipse cover, #FFFFFF 0%, #ebe9e1 100%);
 	background: radial-gradient(ellipse at center, #FFFFFF 0%, #ebe9e1 100%);
 }
-h1, h5 {
+h1, h3 {
 	font-family: 'Bungee', cursive;
 	font-weight: 400;
 	font-size: 5rem;
 	color: #4a4a4a;
 	text-align: center;
 }
-h5 {
-	font-size: 2rem;
+
+h3 {
+	font-size: 4rem;
 }
+
 #container {
 	width: 100%;
-	height: 0vh;
+	height: 0%;
 }
 .canvas-size {
 	max-height: 50vh;
@@ -47,6 +49,7 @@ h5 {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	margin-top: 50vh;
+	align-self: flex-end;
+	margin-top: 60vh;
 
 }
